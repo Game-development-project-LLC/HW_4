@@ -1,3 +1,6 @@
+https://omerzshahar.itch.io/3d-bowling
+
+
 # Bowling Game – Weekly Assignment
 
 A small 3D bowling game built in Unity to practice using the physics engine and basic game architecture.
