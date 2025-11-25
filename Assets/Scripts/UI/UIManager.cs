@@ -2,6 +2,10 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
+/// <summary>
+/// Handles all UI elements for the bowling game:
+/// pins counter, roll counter, instruction messages and buttons.
+/// </summary>
 public class UIManager : MonoBehaviour
 {
     [Header("Text Elements")]
@@ -15,6 +19,7 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
+        // Initialize buttons and hide them by default
         if (restartButton != null)
         {
             restartButton.onClick.AddListener(OnRestartClicked);
@@ -28,6 +33,9 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Update the text that shows how many pins are still standing.
+    /// </summary>
     public void UpdatePins(int pinsStanding)
     {
         if (pinsText != null)
@@ -36,6 +44,9 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Update the text that shows the current roll out of the total allowed shots.
+    /// </summary>
     public void UpdateRoll(int currentRoll, int shotsPerFrame)
     {
         if (rollText != null)
@@ -44,6 +55,9 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Display a status/instruction message to the player.
+    /// </summary>
     public void ShowMessage(string msg)
     {
         if (messageText != null)
@@ -52,11 +66,17 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Clear any currently shown message.
+    /// </summary>
     public void ClearMessage()
     {
         ShowMessage(string.Empty);
     }
 
+    /// <summary>
+    /// Show or hide the restart button.
+    /// </summary>
     public void ShowRestartButton(bool show)
     {
         if (restartButton != null)
@@ -65,6 +85,9 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Show or hide the next-level button.
+    /// </summary>
     public void ShowNextLevelButton(bool show)
     {
         if (nextLevelButton != null)
