@@ -21,7 +21,7 @@ A small 3D bowling game built in Unity to practice using the physics engine and 
 Controls in Play mode:
 
 - **Spacebar** – throw the ball forward along the lane.
-- Optional: rotate the player/camera to aim (if enabled in the scene).
+- **mouse**: rotate the mouse to aim.
 
 The UI at the top shows:
 - `Pins: X` – number of pins still standing.  
@@ -30,7 +30,7 @@ The UI at the top shows:
 
 Buttons:
 - **Restart** – reloads the scene and starts a new frame.
-- **Next Level** – starts a new round / next scene (if configured).
+- **Next Level** – starts a new round.
 
 ---
 
