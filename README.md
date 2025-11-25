@@ -7,7 +7,7 @@ A small 3D bowling game built in Unity to practice using the physics engine and 
 
 ---
 
-## 1. How to Run the Game
+## 1. How to Run the Game (in Unity)
 
 1. Open the project in **Unity** (2022/6000+ or compatible).
 2. Open the scene:
@@ -15,6 +15,8 @@ A small 3D bowling game built in Unity to practice using the physics engine and 
    `Assets/Scenes/BowlingScene.unity`
 
 3. Press **Play** in the Unity editor.
+
+- the game was uploded and can be found in the link above
 
 Controls in Play mode:
 
@@ -32,7 +34,7 @@ Buttons:
 
 ---
 
-## 2. Class Relationships (Short Overview)
+## 2. Class Relationships
 
 - **GameManager**  
   - Singleton that holds the main game state: list of pins, current roll, game state enum, and references to UI texts.  
